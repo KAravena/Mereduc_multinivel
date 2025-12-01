@@ -61,7 +61,7 @@ casen_educ <- readRDS("output/casen_educ.rds")
 
 **Katherine Aravena Herrera, Paula Cerda Torres & Sebastián Monreal Villarroel**
 
-::: {.red2 .medium}
+::: {.medium}
 **Análisis de datos multinivel - 2025**
 
 **Departamento de Sociología, Universidad de Chile**
@@ -77,9 +77,9 @@ Santiago, 2025
 Aquí mis notas
 :::
 
-# Introducción
+# Introducción {data-background-color="#41398E"}
 
-**Problema / Objeto de estudio:**
+## **Problema / Objeto de estudio:**
 
 **La desigualdad educativa** persiste como una de las principales barreras para la movilidad social en Chile, especialmente en la Región Metropolitana de Santiago [(Ministerio de Educación, 2023; OECD, 2021)]{.small-text}. Aunque el acceso a la educación básica y media se ha expandido, las diferencias en años de escolaridad siguen reproduciendo clivajes de clase, género y territorio [(Agencia de Calidad de la Educación, 2015; Bellei, Contreras & Valenzuela, 2008).]{.small-text}
 
@@ -105,7 +105,7 @@ A raiz de lo anterior, el objetivo del estudio es analizar cómo la **interacci�
 
     > <span class="small-text"> Estas variables expresan las condiciones estructurales del territorio, influyendo en las oportunidades educativas disponibles. Se incorporan para analizar cómo el entorno puede amplificar o mitigar las desigualdades preexistentes, más allá de las características individuales.
 
-##  {data-background-color="#FF0000"}
+##  {data-background-color="#41398E"}
 
 ::: {.center .middle}
 [¿En qué medida los distintos factores de socialización —tanto familiares como territoriales— influyen en los años de escolaridad de los habitantes del Gran Santiago?]{style="font-size: 230%;"}
@@ -139,7 +139,7 @@ A raiz de lo anterior, el objetivo del estudio es analizar cómo la **interacci�
 
 ![](input/img/Años_de_escolaridad_final.png){fig-align="center" width="773" height="494"}
 
-# Metodología {data-background-color="#FF0000"}
+# Metodología {data-background-color="#41398E"}
 
 ## Datos
 
@@ -365,9 +365,9 @@ $$
   \
 $$
 
-# Resultados {data-background-color="#FF0000"}
+# Resultados {data-background-color="#41398E"}
 
-# Descriptivos {data-background-color="#FF0000"}
+# Descriptivos {data-background-color="#41398E"}
 
 ## Scatterplot:
 
@@ -674,7 +674,7 @@ print(plot_obj)
 :::
 :::::
 
-# **Observaciones influyentes**
+## **Observaciones influyentes**
 
 ```{r Observaciones influyentes}
 #| include: false
@@ -777,11 +777,11 @@ tab_model(
 
 ```
 
-# **Discusión**
+## **Discusión**
 
 ![](input/img/r_Años_de_escolaridad_final.png){fig-align="center" width="773" height="494"}
 
-# Conclusiones {data-background-color="#FF0000"}
+# Conclusiones {data-background-color="#41398E"}
 
 -   **Aporte metodológico**: El modelo multinivel distinguió con precisión la varianza entre y dentro de comunas, revelando interacciones ocultas.
 

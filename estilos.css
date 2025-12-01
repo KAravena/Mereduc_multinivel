@@ -41,3 +41,24 @@ p {
   font-size: 0.85em !important;   /* ajusta 0.8–0.9 si lo necesitas */
 }
 
+.red2 {
+  background-color: #41398E;
+  /* o color: #41398E; según lo que estés usando */
+}
+
+/* Títulos h2 de las slides (## ...) en morado #41398E */
+.reveal h2,
+.reveal h2 strong {
+  color: #41398E !important;
+}
+
+.reveal h1.intro-title,
+.reveal h1.intro-title strong {
+  color: #41398E !important;
+}
+
+/* Títulos h2 de las slides (## ...) en morado #41398E */
+.reveal h3,
+.reveal h3 strong {
+  color: #41398E !important;
+}
