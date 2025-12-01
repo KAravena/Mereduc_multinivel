@@ -48,15 +48,10 @@ casen_educ <- readRDS("output/casen_educ.rds")
 ```
 
 :::::: columns
-::: {.column width="30%"}
-
-![](images/logo-sociales.png){width=90% .center}
-
-![](images/logo-congreso.png){width=90% .center}
-
+::: {.column width="20%"}
 :::
 
-:::: {.column .column-right width="70%"}
+:::: {.column .column-right width="80%"}
 ## **Méritos y barreras: ¿Funciona la meritocracia educativa en el Gran Santiago?**
 
 ### **Un análisis multinivel de la CASEN 2022**
@@ -249,7 +244,9 @@ tab_lvl2
 
 Se utilizó una metodología de análisis estadístico multinivel. De este modo se puede observar de manera más precisa cómo **las trayectorias educativas** se configuran por la interacción entre **factores individuales** y **contextuales**.
 
-El análisis de datos se realizó en Rstudio, utilizando lmer para la construcción de los modelos, sjPlot para la visualización de los datos y summary tools para generar descriptivos univariados
+El análisis de datos se realizó en Rstudio, utilizando lmer para la construcción de los modelos, sjPlot para la visualización de los datos y summary tools para generar descriptivos univariados.
+
+Con el fin de realizar una mejor estimación de los modelos, los predictores fueron centrados en torno a la gran media para variables contextuales y sobre la media grupal para los predictores individuales. 
 
 Se estimaron un total de 7 modelos, siguientes modelos:
 
