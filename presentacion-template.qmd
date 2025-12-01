@@ -48,10 +48,15 @@ casen_educ <- readRDS("output/casen_educ.rds")
 ```
 
 :::::: columns
-::: {.column width="20%"}
+::: {.column width="30%"}
+
+![](images/logo-sociales.png){width=90% .center}
+
+![](images/logo-congreso.png){width=90% .center}
+
 :::
 
-:::: {.column .column-right width="80%"}
+:::: {.column .column-right width="70%"}
 ## **Méritos y barreras: ¿Funciona la meritocracia educativa en el Gran Santiago?**
 
 ### **Un análisis multinivel de la CASEN 2022**
