@@ -8,11 +8,13 @@ format:
     auto-stretch: false
     transition: fade
     transition-speed: slow
-    scrollable: true
-    scrollOverflow: true           
+    scrollable:  false 
+    scrollOverflow:  false            
     css: estilos.css 
     self-contained: true
+bibliography: refs-multinivel.bib
 editor: source
+
 ---
 
 # 
@@ -75,7 +77,7 @@ casen_educ <- readRDS("output/casen_educ.rds")
 Santiago, 2025
 ::::
 
-[Github repo](link%20al%20repo)
+[Github repo](https://github.com/KAravena/Mereduc_multinivel)
 ::::::
 
 ::: notes
@@ -86,27 +88,34 @@ Aquí mis notas
 
 ## **Problema / Objeto de estudio:**
 
-**La desigualdad educativa** persiste como una de las principales barreras para la movilidad social en Chile, especialmente en la Región Metropolitana de Santiago [(Ministerio de Educación, 2023; OECD, 2021)]{.small-text}. Aunque el acceso a la educación básica y media se ha expandido, las diferencias en años de escolaridad siguen reproduciendo clivajes de clase, género y territorio [(Agencia de Calidad de la Educación, 2015; Bellei, Contreras & Valenzuela, 2008).]{.small-text}
 
-A raiz de lo anterior, el objetivo del estudio es analizar cómo la **interacción** entre recursos familiares (nivel socioeconómico, participación social) y **condiciones comunales** (tasa de empleo, oferta educativa, IDH) explica las diferencias en años de escolaridad en el Gran Santiago mediante un enfoque multinivel [(Finch et al., 2019; Romero et al., 2020).]{.small-text}
+La desigualdad educativa persiste como una de las principales barreras para la **movilidad social en Chile**, especialmente en la Región Metropolitana de Santiago [[@Mineduc2023; @OECD2021]]{.small-text}. Esta asociación entre *origen social, trayectoria educativa y destino ocupacional* se ha documentado en estudios recientes que muestran una **movilidad intergeneracional limitada y fuertemente estratificada** por clase en el país, incluso entre las generaciones jóvenes [[@Muga_Mora2021-wb; @RodrigoOyarzo2021]]{.small-text}.
+
+Aunque el acceso a la educación básica y media se ha expandido, las diferencias en años de escolaridad siguen reproduciendo clivajes de clase, género y territorio [[@AgenciaCalidadEducacion2015; @bellei2013estudio]]{.small-text}
 
 ------------------------------------------------------------------------
+
+A raiz de lo anterior, el objetivo del estudio es analizar cómo la **interacción** entre recursos familiares (nivel socioeconómico, participación social) y **condiciones comunales** (tasa de empleo, oferta educativa, IDH) explica las diferencias en años de escolaridad en el Gran Santiago mediante un enfoque multinivel [[@FinchBolinKelley2019; @RomeroAlcarazHernandez2020]]{.small-text}
+
+
+![](images/undraw_education_3vwh.svg){fig-align="center" width="50%"}
+
 
 ## Desde la sociología de la educación, esta persistencia se explica mediante:
 
-1.  Reproducción de capitales familiares — la escuela convierte de forma desigual el capital económico, cultural y social de origen en logro académico, reforzando la ventaja heredada [(Bourdieu & Passeron, 2001; Bellei et al., 2008).]{.small-text}
+1.  Reproducción de capitales familiares — la escuela convierte de forma desigual el capital económico, cultural y social de origen en logro académico, reforzando la ventaja heredada [[@BourdieuPasseron2001,  @bellei2013estudio]]{.small-text}
 
-2.  Lógica meritocrática — los criterios de evaluación escolar naturalizan esas ventajas, atribuyendo el éxito exclusivamente al mérito individual [(Ministerio de Educación, 2023; OECD, 2021).]{.small-text}
+2.  Lógica meritocrática — los criterios de evaluación escolar naturalizan esas ventajas, atribuyendo el éxito exclusivamente al mérito individual [[ @Castillo2024SocializationMeritocracy; @Batruch2023MeritocracyInequality]]{.small-text}
 
-3.  Efectos de contexto — las oportunidades educativas están moduladas por la estructura territorial (segregación residencial, oferta escolar, dinamismo laboral), que amplifica o atenúa los recursos familiares [(Soler & Fernández, 2021; Canales & Ibarrola, 2022; Villalobos & Mardones, 2022).]{.small-text}
+3.  Efectos de contexto — las oportunidades educativas están moduladas por la estructura territorial (segregación residencial, oferta escolar, dinamismo laboral), que amplifica o atenúa los recursos familiares [[@SolerFernandez2021; @VillalobosMardones2022; @CanalesIbarrola2022]]{.small-text}
 
 ------------------------------------------------------------------------
 
--   **Factores asociados L1:** Nivel socioeconómico del hogar [(Arita et al., 2015; Bellei et al., 2008)]{.small-text}, Género [(OECD, 2021; Peláez & Rodríguez, 2020)]{.small-text}y Participación social familiar [(Bullones, 2022; Canales & Ibarrola, 2022).]{.small-text}
+-   **Factores asociados L1:** Nivel socioeconómico del hogar [[@Arita2015]]{.small-text}, Género [[@PelaezRodriguez2020; @OECD2021]]{.small-text}y Participación social familiar [[@Bullones2022; @CanalesIbarrola2022Canales]]{.small-text}.
 
     > <span class="small-text"> Estos factores se entienden como recursos o desventajas que configuran las trayectorias escolares desde el origen social, afectando tanto el acceso como la permanencia y el logro educativo.
 
--   **Factores asociados L2:** Tasa de empleo comunal [(Villalobos & Mardones, 2022)]{.small-text}, IDH comunal [(Andréu, 2013; Giménez, 2004)]{.small-text} y oferta educativa comunal [(Rivas & Terra, 2024; Soler & Fernández, 2021).]{.small-text}
+-   **Factores asociados L2:** Tasa de empleo comunal [[@VillalobosMardones2022]]{.small-text}, IDH comunal [[@PNUD2024_IDHComunal ; @Poblete2020_IDHChile]]{.small-text} y oferta educativa comunal [[@RivasTerra2024; @SolerFernandez2021]]{.small-text}.
 
     > <span class="small-text"> Estas variables expresan las condiciones estructurales del territorio, influyendo en las oportunidades educativas disponibles. Se incorporan para analizar cómo el entorno puede amplificar o mitigar las desigualdades preexistentes, más allá de las características individuales.
 
@@ -140,9 +149,12 @@ A raiz de lo anterior, el objetivo del estudio es analizar cómo la **interacci�
 
 <span class="small-text"> $H_8$: El efecto positivo del nivel socioeconómico (NSE) sobre la escolaridad es más intenso en comunas con un alto IDH
 
-## Modelo teórico {.center}
 
-![](input/img/Años_de_escolaridad_final.png){fig-align="center" width="773" height="494"}
+## {data-background-image="input/img/Años_de_escolaridad_final.png"
+   data-background-size="contain"
+   data-background-position="center"}
+
+
 
 # Metodología {data-background-color="#41398E"}
 
@@ -249,7 +261,9 @@ tab_lvl2
 
 Se utilizó una metodología de análisis estadístico multinivel. De este modo se puede observar de manera más precisa cómo **las trayectorias educativas** se configuran por la interacción entre **factores individuales** y **contextuales**.
 
-El análisis de datos se realizó en Rstudio, utilizando lmer para la construcción de los modelos, sjPlot para la visualización de los datos y summary tools para generar descriptivos univariados
+El análisis de datos se realizó en R, utilizando lmer para la construcción de los modelos, sjPlot para la visualización de los datos y summary tools para generar descriptivos univariados
+
+Con el fin de realizar una mejor estimación de los modelos, los predictores fueron centrados en torno a la gran media para variables contextuales y sobre la media grupal para los predictores individuales. 
 
 Se estimaron un total de 7 modelos, siguientes modelos:
 
@@ -424,7 +438,7 @@ casen_educ %>%
   theme_minimal()
 ```
 
-## Modelos
+## Modelos {#slide-modelos}
 
 ```{r definir modelos y centrado, include=FALSE}
 # CENTRADO DE VARIABLES --------------------------------------------------------
@@ -536,63 +550,11 @@ knitr::asis_output(salida)
 invisible(NULL)      # evita ecos adicionales
 ```
 
-------------------------------------------------------------------------
 
-## Test de devianza
+## {data-background-image="input/img/r_Años_de_escolaridad_final.png"
+   data-background-size="contain"
+   data-background-position="center"}
 
-```{r test de devianza}
-#| label: lrt-table
-#| echo: false
-#| results: asis
-#| warning: false
-#| message: false
-
-
-## 1 ─ LRT ----------------------------------------------------------------------
-lrt_raw <- anova(m3, m4) |>
-  as.data.frame() |>
-  tibble::rownames_to_column("modelo") |>
-  mutate(modelo = recode(modelo,
-                         m3 = "sin&nbsp;pendiente",
-                         m4 = "con&nbsp;pendiente"))
-
-row_lrt <- tibble(
-  modelo = "LRT", npar = NA, AIC = NA, BIC = NA, logLik = NA,
-  LRT = lrt_raw$Chisq[2], gl = lrt_raw$Df[2],
-  p = lrt_raw$`Pr(>Chisq)`[2]
-)
-
-tabla_lrt <- bind_rows(
-  select(lrt_raw, modelo, npar, AIC, BIC, logLik),
-  row_lrt
-)
-
-## 2 ─ kable en HTML ------------------------------------------------------------
-tbl_html <- kable(tabla_lrt, "html", digits = 3, escape = FALSE,
-                  caption = "¿La pendiente aleatoria de NSE mejora el ajuste?") |>
-  kable_styling(full_width = FALSE,
-                bootstrap_options = c("striped", "hover", "condensed"),
-                font_size = 15) |>          # ← TAMAÑO FUENTE (sube o baja)
-  add_header_above(c(" " = 5, "Likelihood-ratio test" = 3)) |>
-  add_footnote(
-    "χ² significativo (p < 0.001) ⇒ conviene dejar la pendiente de NSE como aleatoria",
-    notation = "none"
-  )
-
-## 3 ─ contenedor centrado con scroll si hace falta ----------------------------
-scroll_box <- div(
-  style = "
-    max-width: 1000px;      /* cambia este ancho si lo necesitas */
-    margin: 0 auto;         /* centra la tabla */
-    overflow-x: auto;       /* barra horizontal si se pasa de 1000 px */
-  ",
-  HTML(tbl_html)
-)
-
-knitr::asis_output(as.character(scroll_box))
-```
-
-------------------------------------------------------------------------
 
 ## Interacción H7
 
@@ -678,6 +640,63 @@ print(plot_obj)
 [La interacción muestra que el efecto del NSE sobre la escolaridad varía según el IDH comunal. En comunas con un mayor IDH (azul), el NSE tiene un impacto mayor sobre los años de escolaridad, mientras que en comunas con un menor IDH (roja), su efecto es más débil. Suguiriendo que que el capital económico tiene un mayor impacto educativo en contextos comunales más desarrollados, donde pueden existen más recursos institucionales para transformar las ventajas familiares en logros escolares.]{style="font-size: 70%;"}
 :::
 :::::
+
+
+## Test de devianza
+
+```{r test de devianza}
+#| label: lrt-table
+#| echo: false
+#| results: asis
+#| warning: false
+#| message: false
+
+
+## 1 ─ LRT ----------------------------------------------------------------------
+lrt_raw <- anova(m3, m4) |>
+  as.data.frame() |>
+  tibble::rownames_to_column("modelo") |>
+  mutate(modelo = recode(modelo,
+                         m3 = "sin&nbsp;pendiente",
+                         m4 = "con&nbsp;pendiente"))
+
+row_lrt <- tibble(
+  modelo = "LRT", npar = NA, AIC = NA, BIC = NA, logLik = NA,
+  LRT = lrt_raw$Chisq[2], gl = lrt_raw$Df[2],
+  p = lrt_raw$`Pr(>Chisq)`[2]
+)
+
+tabla_lrt <- bind_rows(
+  select(lrt_raw, modelo, npar, AIC, BIC, logLik),
+  row_lrt
+)
+
+## 2 ─ kable en HTML ------------------------------------------------------------
+tbl_html <- kable(tabla_lrt, "html", digits = 3, escape = FALSE,
+                  caption = "¿La pendiente aleatoria de NSE mejora el ajuste?") |>
+  kable_styling(full_width = FALSE,
+                bootstrap_options = c("striped", "hover", "condensed"),
+                font_size = 15) |>          # ← TAMAÑO FUENTE (sube o baja)
+  add_header_above(c(" " = 5, "Likelihood-ratio test" = 3)) |>
+  add_footnote(
+    "χ² significativo (p < 0.001) ⇒ conviene dejar la pendiente de NSE como aleatoria",
+    notation = "none"
+  )
+
+## 3 ─ contenedor centrado con scroll si hace falta ----------------------------
+scroll_box <- div(
+  style = "
+    max-width: 1000px;      /* cambia este ancho si lo necesitas */
+    margin: 0 auto;         /* centra la tabla */
+    overflow-x: auto;       /* barra horizontal si se pasa de 1000 px */
+  ",
+  HTML(tbl_html)
+)
+
+knitr::asis_output(as.character(scroll_box))
+```
+
+------------------------------------------------------------------------
 
 ## **Observaciones influyentes**
 
@@ -782,10 +801,6 @@ tab_model(
 
 ```
 
-## **Discusión**
-
-![](input/img/r_Años_de_escolaridad_final.png){fig-align="center" width="773" height="494"}
-
 # Conclusiones {data-background-color="#41398E"}
 
 -   **Aporte metodológico**: El modelo multinivel distinguió con precisión la varianza entre y dentro de comunas, revelando interacciones ocultas.
@@ -797,39 +812,5 @@ tab_model(
 -   **Política pública:** Combinar desarrollo territorial con apoyo al capital familiar para reducir brechas escolares.
 
 ## Referencias
-
-Agencia de Calidad de la Educación. (2015, agosto). Evolución de las brechas socioeconómicas de rendimiento en pruebas SIMCE. División de Estudios, Agencia de Calidad de la Educación.
-
-Andréu, J. (2011). El análisis multinivel: una revisión actualizada en el ámbito sociológico. Metodología de Encuestas, 13, 161–176.
-
-Arita, M., Romano, A., García, A., & Félix, F. (2015). Condiciones de vida y bienestar subjetivo en Culiacán, México. Universidad Autónoma de Sinaloa.
-
-Bellei Carvacho, C., Contreras, D., & Valenzuela Barros, J. P. (2008). La agenda pendiente en educación. Profesores, administradores y recursos: propuestas para la nueva arquitectura de la educación chilena. Universidad de Chile.
-
-Bourdieu, P., & Passeron, J. C. (2001). La reproducción. Elementos para una teoría del sistema de enseñanza. Editorial Laia.
-
-Bullones, E. (2022). Gestión educativa en valores para la paz comunitaria. Aula Virtual, 3(6), 150–160.
-
-Canales, A., & de Ibarrola, M. (2022). La segmentación del sistema escolar mexicano: un análisis territorial. Revista Mexicana de Investigación Educativa, 27(94), 1035–1060.
-
-Cimadamore, A. D., & Cattani, A. D. (Coords.). (2008). Producción de pobreza y desigualdad en América Latina. Siglo del Hombre Editores.
-
-Finch, W. H., Bolin, J. E., & Kelley, K. (2019). Multilevel modeling using R. Chapman and Hall/CRC.
-
-Instituto Nacional de Evaluación Educativa. (2011). PIRLS–TIMSS 2011. Estudio Internacional de Progreso en Comprensión Lectora, Matemáticas y Ciencias. Volumen I: Informe español. IEA.<https://www.mecd.gob.es/inee>
-
-Ministerio de Educación de Chile. (2023). Informe de resultados SIMCE y brechas por grupo socioeconómico. Santiago: MINEDUC.
-
-Ministerio de Desarrollo Social y Familia. (2022). Encuesta de Caracterización Socioeconómica Nacional (Casen) 2022. Gobierno de Chile.
-
-OECD. (2021). Education at a Glance: OECD Indicators. OECD Publishing.<https://doi.org/10.1787/b35a14e5-en>
-
-Peláez González, C., & Rodríguez, S. A. (2020). Género, trabajo y educación: Diferencias entre hombres y mujeres en la entrada al primer empleo. Revista Interdisciplinaria de Estudios de Género de El Colegio de México, 6, e494.
-
-Rivas Espinosa, A., & Terra Polanco, V. (2024). Percepciones de niñas y niños sobre su hábitat en contextos urbanos informales. Sociológica (Madrid), 39(1).
-
-Romero, E., Alcaraz, S., & Hernández, M. (2020). Desigualdades educativas y respuesta institucional: Una investigación desde la perspectiva territorial. Profesorado, Revista de Currículum y Formación del Profesorado, 24(1), 1–20.
-
-Soler Mata, J., & Fernández León, R. (2021). La evaluación educativa en España: Tensiones entre la evaluación estandarizada y la evaluación formativa. Revista de Educación, 393, 245–271.
-
-Villalobos, C., & Mardones, S. P. (2022). ¿Quién, cómo y de qué se investiga en un sistema educativo mercantilizado? Un meta-análisis de la investigación sobre política educativa en el Chile post-dictadura (1990–2019). Education Policy Analysis Archives, 30, 160.
+nocite: |
+  @*

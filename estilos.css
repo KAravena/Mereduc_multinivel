@@ -62,3 +62,10 @@ p {
 .reveal h3 strong {
   color: #41398E !important;
 }
+
+/* Scroll SOLO en la slide de Modelos */
+.reveal .slides section#slide-modelos {
+  overflow-y: auto;    /* permite scroll vertical */
+  overflow-x: hidden;  /* evita scroll horizontal feo */
+  max-height: 100vh;   /* asegura que respete el alto de la ventana */
+}
