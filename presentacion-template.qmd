@@ -169,7 +169,6 @@ Se utilizó la base de datos de la **CASEN 2022**, que tiene un diseño muestral
 
 Para el análisis se trabajó con **22.706 individuos** (nivel 1) de 18 o más años, anidados dentro de las **32 comunas** del Gran Santiago (nivel 2), con un promedio de 702 casos por comuna.\
 
-![](images/logo_casen_2.png){fig-align="center" width="50%"}
 
 ## Variables
 
